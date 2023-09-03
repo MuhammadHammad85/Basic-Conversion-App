@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--ConvertionVC-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController storyboardIdentifier="ConvertionVC" id="BYZ-38-t0r" customClass="ConvertionVC" customModule="Convertion_App" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="windowShopperBG" translatesAutoresizingMaskIntoConstraints="NO" id="qHP-sw-e3Y">
+                                <rect key="frame" x="0.0" y="48" width="414" height="814"/>
+                            </imageView>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="i4H-zu-ykx">
+                                <rect key="frame" x="0.0" y="48" width="414" height="44"/>
+                                <color key="barTintColor" systemColor="systemOrangeColor"/>
+                                <textAttributes key="titleTextAttributes">
+                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </textAttributes>
+                                <items>
+                                    <navigationItem title="Convertion App" id="KaS-wq-LuD"/>
+                                </items>
+                            </navigationBar>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="dk9-Gl-UYo">
+                                <rect key="frame" x="20" y="431" width="374" height="34"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pounds" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xuU-Td-Fx5">
+                                        <rect key="frame" x="0.0" y="0.0" width="151" height="34"/>
+                                        <fontDescription key="fontDescription" name="HiraMinProN-W3" family="Hiragino Mincho ProN" pointSize="24"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter miles" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="J5x-4Z-HTn">
+                                        <rect key="frame" x="171" y="0.0" width="203" height="34"/>
+                                        <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <fontDescription key="fontDescription" name="HiraMinProN-W3" family="Hiragino Mincho ProN" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" keyboardType="decimalPad" returnKeyType="done"/>
+                                    </textField>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="98r-qj-dvc">
+                                <rect key="frame" x="20" y="219" width="374" height="34"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Miles:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cFS-9W-rlI">
+                                        <rect key="frame" x="0.0" y="0.0" width="140.5" height="34"/>
+                                        <fontDescription key="fontDescription" name="HiraMinProN-W3" family="Hiragino Mincho ProN" pointSize="24"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter miles" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="UYd-M4-P9Y">
+                                        <rect key="frame" x="150.5" y="0.0" width="223.5" height="34"/>
+                                        <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <fontDescription key="fontDescription" name="HiraMinProN-W3" family="Hiragino Mincho ProN" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" keyboardType="decimalPad" returnKeyType="done"/>
+                                    </textField>
+                                </subviews>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Result" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wx1-WY-qSu">
+                                <rect key="frame" x="83" y="281" width="247" height="80"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="80" id="Z0o-Lh-3y0"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HiraMinProN-W3" family="Hiragino Mincho ProN" pointSize="30"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Result" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AAc-J7-m7t">
+                                <rect key="frame" x="84" y="505" width="247" height="80"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="80" id="BET-xO-aJY"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HiraMinProN-W3" family="Hiragino Mincho ProN" pointSize="30"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dMe-F0-L66">
+                                <rect key="frame" x="40" y="369" width="334" height="36"/>
+                                <color key="backgroundColor" red="0.98460477590560913" green="0.71013838052749634" blue="0.011724602431058884" alpha="0.99607849120000003" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="Futura-Bold" family="Futura" pointSize="18"/>
+                                <state key="normal" title="Convert To Kilo Gram">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="MileConvertion:" destination="BYZ-38-t0r" eventType="touchUpInside" id="4Ok-Sx-UL5"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XAY-sa-du0">
+                                <rect key="frame" x="40" y="602" width="334" height="36"/>
+                                <color key="backgroundColor" red="0.98460477590560913" green="0.71013838052749634" blue="0.011724602431058884" alpha="0.99607849120000003" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="Futura-Bold" family="Futura" pointSize="18"/>
+                                <state key="normal" title="Convert To Kilo Gram">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="PoundsConvertion:" destination="BYZ-38-t0r" eventType="touchUpInside" id="tAn-WQ-xMN"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="dk9-Gl-UYo" secondAttribute="trailing" constant="20" id="0Hx-IB-hrz"/>
+                            <constraint firstItem="98r-qj-dvc" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="5LF-dS-gcY"/>
+                            <constraint firstItem="dMe-F0-L66" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="40" id="BUg-WX-OLs"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="98r-qj-dvc" secondAttribute="trailing" constant="20" id="E9F-Pg-myf"/>
+                            <constraint firstItem="dk9-Gl-UYo" firstAttribute="top" secondItem="dMe-F0-L66" secondAttribute="bottom" constant="26" id="ERk-Sf-aic"/>
+                            <constraint firstItem="AAc-J7-m7t" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="84" id="HJM-QT-PRu"/>
+                            <constraint firstItem="dMe-F0-L66" firstAttribute="top" secondItem="wx1-WY-qSu" secondAttribute="bottom" constant="8" symbolic="YES" id="IdP-5g-948"/>
+                            <constraint firstItem="XAY-sa-du0" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="40" id="KOC-BS-pYf"/>
+                            <constraint firstItem="AAc-J7-m7t" firstAttribute="top" secondItem="dk9-Gl-UYo" secondAttribute="bottom" constant="40" id="KSK-ak-lxD"/>
+                            <constraint firstItem="i4H-zu-ykx" firstAttribute="leading" secondItem="qHP-sw-e3Y" secondAttribute="leading" id="NHB-iE-vG3"/>
+                            <constraint firstItem="wx1-WY-qSu" firstAttribute="top" secondItem="98r-qj-dvc" secondAttribute="bottom" constant="28" id="Oko-rN-7Ud"/>
+                            <constraint firstItem="qHP-sw-e3Y" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="SoJ-Dz-V7q"/>
+                            <constraint firstItem="qHP-sw-e3Y" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="TKp-bu-1ah"/>
+                            <constraint firstItem="qHP-sw-e3Y" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="Uut-4D-LbO"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="AAc-J7-m7t" secondAttribute="trailing" constant="83" id="Woa-8K-Ejk"/>
+                            <constraint firstItem="wx1-WY-qSu" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="83" id="a7a-t0-0Hj"/>
+                            <constraint firstItem="dk9-Gl-UYo" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="bRH-el-V8T"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="XAY-sa-du0" secondAttribute="trailing" constant="40" id="cb7-VY-G7t"/>
+                            <constraint firstItem="98r-qj-dvc" firstAttribute="centerX" secondItem="i4H-zu-ykx" secondAttribute="centerX" id="f2c-NM-AxX"/>
+                            <constraint firstItem="i4H-zu-ykx" firstAttribute="top" secondItem="qHP-sw-e3Y" secondAttribute="top" id="g3F-rL-Gut"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="wx1-WY-qSu" secondAttribute="trailing" constant="84" id="irg-Zt-i2F"/>
+                            <constraint firstItem="qHP-sw-e3Y" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="jD1-Jd-tis"/>
+                            <constraint firstItem="98r-qj-dvc" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="lDZ-qP-PKO"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="dMe-F0-L66" secondAttribute="trailing" constant="40" id="n6w-SN-yuC"/>
+                            <constraint firstItem="XAY-sa-du0" firstAttribute="top" secondItem="AAc-J7-m7t" secondAttribute="bottom" constant="17" id="wLt-sm-ruB"/>
+                            <constraint firstItem="dk9-Gl-UYo" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="ycy-eM-UyF"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="mileConvertionButton" destination="dMe-F0-L66" id="Yta-sn-QxK"/>
+                        <outlet property="mileResultLabel" destination="wx1-WY-qSu" id="rVc-Je-JfU"/>
+                        <outlet property="mileTextField" destination="UYd-M4-P9Y" id="rcI-Ed-mOi"/>
+                        <outlet property="poundConvertionButoon" destination="XAY-sa-du0" id="yyY-JU-tjb"/>
+                        <outlet property="poundResult" destination="AAc-J7-m7t" id="S0Z-dl-VOc"/>
+                        <outlet property="poundTextField" destination="J5x-4Z-HTn" id="8vZ-ql-PhS"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="18.840579710144929" y="88.392857142857139"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="windowShopperBG" width="414" height="736"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemOrangeColor">
+            <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
